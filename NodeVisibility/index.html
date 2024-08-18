@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <style>
-        .my-div {
+        .div-visible {
             width: 1px;
             height: 1px;
-            overflow: auto;
+            overflow: visible;
             background-color: lightblue; /* Optional, just to make the div visible */
         }
     </style>
 </head>
 <body>
-    <div class="my-div">This is some text inside a tiny div.</div>
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML document.</p>
+<div class="div-visible" >div-visible</div><p></p><p></p>
+<div class="div-visible" style="overflow: hidden;">overflow: hidden</div>
+<div class="div-visible" style="overflow: scroll;">overflow: scroll</div>
+<div class="div-visible" style="overflow: auto;">overflow: auto</div>
+<div class="div-visible" style="overflow: hidden;">parent div not visible
+    <div class="div-visible" >inner div visible</div><p></p><p></p>
+</div>
+<h1>End</h1>
 </body>
 </html>
