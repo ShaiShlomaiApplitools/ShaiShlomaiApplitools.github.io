@@ -14,12 +14,21 @@
     </style>
 </head>
 <body>
-<div class="div-visible" >div-visible</div><p></p><p></p>
+<div class="div-visible">div-visible</div>
+<p></p>
+<p></p>
 <div class="div-visible" style="overflow: hidden;">overflow: hidden</div>
 <div class="div-visible" style="overflow: scroll;">overflow: scroll</div>
 <div class="div-visible" style="overflow: auto;">overflow: auto</div>
 <div class="div-visible" style="overflow: hidden;">parent div not visible
-    <div class="div-visible" >inner div visible</div><p></p><p></p>
+    <div class="div-visible">inner div visible</div>
+    <p></p>
+    <p></p>
+</div>
+<div class="div-visible" style="overflow: hidden;">parent div not visible
+    <div class="div-visible">inner div visible
+        <div class="div-visible">2nd inner div visible</div>
+    </div>
 </div>
 <h1>End</h1>
 </body>
